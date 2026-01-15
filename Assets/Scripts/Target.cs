@@ -27,5 +27,6 @@ public class Target : MonoBehaviour
     void Hit()
     {
         OnHit?.Invoke();   // informuje PopUpTarget
+        gameObject.SetActive(false);
     }
 }
